@@ -28,8 +28,8 @@ def greet_user(name):
 # greet_user("Abishek")
 
 # ===========================================
-# Task - create a simple calculator
-
+# Task
+# Create a simple calculator
 # Create a class called Calculator
 # Create a constructor
 # Create methods for add, sub, mul, div
