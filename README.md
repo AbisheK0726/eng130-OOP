@@ -13,11 +13,6 @@ Object Oriented Programming (OOP) is a programming paradigm that uses objects an
 
 ### 4 Pillars of OOP
 
-1. Encapsulation
-2. Abstraction
-3. Inheritance
-4. Polymorphism
-
 |Pillar|Description|
 |:---|:---|
 |Encapsulation|Encapsulation is the process of combining data and functions into a single unit called a class. Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties' direct access to them.|
@@ -35,6 +30,18 @@ Built-in modules are modules that are pre-installed with python. You can use the
 1. Reusability of code - You don't have to write the same code again and again. You can just import the module and use it.
 2. Code organization - You can organize your code into different files for better readability and organization.
 3. Readability - You can import a module with a short name, making your code more readable.
+4. Efficiency - You can import only the parts of a module that you need, instead of importing the whole module.
+
+Example of built-in module:
+
+```python
+import math, random, datetime, sys
+
+print(math.pi)
+print(random.randint(1, 10))
+print(datetime.date.today())
+print(sys.version)
+```
 
 ### Method and Function
 
