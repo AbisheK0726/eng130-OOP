@@ -6,12 +6,16 @@
 - [4 Pillars of OOP](#4-pillars-of-oop)
 - [Modules (Python)](#modules-python)
 - [Method and Function](#method-and-function)
+- [Class](#classes)
+
+
 
 ## Introduction
 
 Object Oriented Programming (OOP) is a programming paradigm that uses objects and their interactions to design and program applications. OOP is a way of thinking about programming, based on real-world entities like objects, their attributes and methods.
 
 ### 4 Pillars of OOP
+
 Look at oop_pillar.md
 
 ### Modules (Python)
@@ -45,3 +49,64 @@ my_function()
 ```
 
 ### Classes
+
+A class is a blueprint for the object.
+
+```python
+class MyClass:
+  x = 5
+
+p1 = MyClass()
+print(p1.x)
+```
+
+#### Inheritance
+
+![Inheritance](images/inheritance.png)
+
+Inheritance allows us to define a class that inherits all the methods and properties from another class.
+
+Parent class is the class being inherited from, also called base class.
+
+Child class is the class that inherits from another class, also called derived class.
+
+```python
+class Person:
+  def __init__(self, fname, lname): # Attributes of the class, also called fields
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+class Student(Person):
+  pass
+
+x = Student("Mike", "Olsen")
+x.printname()
+```
+
+#### Constructor
+
+`__init__()` is a reseved method in python classes (function). It is known as a constructor in object oriented concepts. This method called when an object is created from the class and it allow the class to initialize the attributes of a class.
+
+```python
+class Person:
+  def __init__(self, fname, lname): #Constructor
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+```
+
+#### Object
+
+An object is an instance of a class. When the individual object is created, memory is allocated.
+In this case `p1` is an object of the class Person.
+
+```python
+p1 = Person("John", "Doe")
+p1.printname()
+```
