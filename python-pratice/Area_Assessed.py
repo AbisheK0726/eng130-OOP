@@ -84,3 +84,86 @@ class Student(Person):
     def __init__(self, name, age, grade):
         super().__init__(name, age)
         self.grade = grade
+
+# ===================================
+# Q6
+"""
+string - any data type - how to add an item to to a list - tuple - dict etc
+"""
+my_list.append(11)
+my_dict["eleven"] = 11
+my_tuple = my_tuple + (11,) # You can't add to a tuple, you have to create a new tuple and then concatenate the two tuples together
+
+# ===================================
+# Q7
+"""
+problem solving skills with code examples - how to create an object of a class
+"""
+s = Student("Bob", 19, 12)
+print(s.name)
+
+# ===================================
+# Q8
+"""
+calculation functions with args and return statements 
+- return True or false based on the condition provided in the question 
+- return "any" 
+- DISPLAY true or false 
+- create basic calculator functions without classes
+"""
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):    
+    return a / b
+
+print(add(1, 2))
+print(subtract(1, 2))
+print(multiply(1, 5))
+
+# ===================================
+# Q9
+"""
+odd even number counter with range(1, 100)  odd & even numbers return only even number or otherwise 
+- True or False 
+- add the number if it is odd print if it is even 
+- data collection
+"""
+
+def even_odd_counter():
+    sum_of_odd = 0
+    for i in range(1, 101):
+        if i % 2 == 0:
+            print(i)
+        else:
+            sum_of_odd += i
+    print("This is the sum of odd", sum_of_odd)
+    
+
+# ===================================
+# Q10
+"""
+shopping_items = {"eggs": 1.85, "bread": 1.50, "peppers": 0.90} 
+- print only values 
+- print the total bill 
+- print item with it's cost 
+- create a function called food_bill and return above outcome
+"""
+
+def shopping_bill():
+    shopping_items = {"eggs": 1.85, "bread": 1.50, "peppers": 0.90}
+    print("Values:", shopping_items.values())
+    
+    total_bill = 0
+    for item, cost in shopping_items.items():
+        print(item, cost)
+        total_bill += cost
+        
+    print("Total bill is", total_bill)
