@@ -8,15 +8,13 @@
 - [Method and Function](#method-and-function)
 - [Class](#classes)
 
-
-
 ## Introduction
 
 Object Oriented Programming (OOP) is a programming paradigm that uses objects and their interactions to design and program applications. OOP is a way of thinking about programming, based on real-world entities like objects, their attributes and methods.
 
 ### 4 Pillars of OOP
 
-Look at oop_pillar.md
+Look at [OOP Pillar](oop-pillar.md) for more details.
 
 ### Modules (Python)
 
